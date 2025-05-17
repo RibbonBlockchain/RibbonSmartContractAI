@@ -1,8 +1,8 @@
 ## About
 Ribbon Protocol is a universal health coverage rewards and loyalty platform that aims to modify health and wellness behavior through incentivization and rewardable tasks.
-The Ribbon App intertwines Universal Basic Income with Universal Health Coverage, utilizing World ID users health & socioeconomic data to enhance global well-being. 
+The Ribbon App intertwines Universal Basic Income with Universal Health Coverage, utilizing users health & socioeconomic data to enhance global well-being. 
 The protocol rewards users for activities that help assess their wellness and socioeconomic needs, while linking them to equitable UBI and personalized services.
-Rewards and Incentives are distributed in points and WLD tokens, on the Optimism Mainnet network which is a Layer 2 network of the Ethereum blockchain.
+Rewards and Incentives are distributed in points and USDC stablecoin, on the Base Blockchain Testnet which is a Layer 2 network on the Ethereum blockchain.
 
 
 ## Core contract and in scope for Audit:
@@ -62,13 +62,13 @@ To run tests:
 ```
 ## Deployment
 1. create a .env 
-2. add rpc in the .env  SEPOLIA_OPTIMISM_RPC
+2. add rpc in the .env  SEPOLIA_BASE_RPC
 ℹ️ Note : you can get rpc from alchemy 
 3. add your private key in your .env file
 
 ### .env file
 ```
-SEPOLIA_OPTIMISM_RPC = 
+SEPOLIA_BASE_RPC = 
 DEV_PRIVATE_KEY = 0x83b446
 ```
 
@@ -76,6 +76,6 @@ run this command for deployment:
 ```
 source .env
 
-forge script script/points.s.sol:PointScript --rpc-url $SEPOLIA_OPTIMISM_RPC --broadcast
+forge script script/points.s.sol:PointScript --rpc-url $SEPOLIA_BASE_RPC --broadcast
 
 ```
